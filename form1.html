@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单示例</title>
+    <style>
+        /* 整体表单容器样式，模拟表格 */
+        form {
+            display: table;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        /* 表单行样式 */
+        .form-row {
+            display: table-row;
+        }
+        /* 标签单元格样式 */
+        .form-label {
+            display: table-cell;
+            padding: 8px;
+            text-align: right;
+            vertical-align: top;
+        }
+        /* 输入字段单元格样式 */
+        .form-field {
+            display: table-cell;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <!-- 姓名行 -->
+        <div class="form-row">
+            <label class="form-label" for="name">姓名：</label>
+            <input class="form-field" type="text" id="name" name="name" placeholder="请输入姓名">
+        </div>
+        <!-- 邮箱行 -->
+        <div class="form-row">
+            <label class="form-label" for="email">邮箱：</label>
+            <input class="form-field" type="email" id="email" name="email" placeholder="请输入邮箱">
+        </div>
+        <!-- 电话行 -->
+        <div class="form-row">
+            <label class="form-label" for="phone">电话：</label>
+            <input class="form-field" type="tel" id="phone" name="phone" placeholder="请输入电话号码">
+        </div>
+        <!-- 留言行 -->
+        <div class="form-row">
+            <label class="form-label" for="message">留言：</label>
+            <textarea class="form-field" id="message" name="message" rows="4" placeholder="请输入留言内容"></textarea>
+        </div>
+        <!-- 提交按钮行 -->
+        <div class="form-row">
+            <div class="form-label"></div>
+            <input class="form-field" type="submit" value="提交">
+        </div>
+    </form>
+</body>
+</html>
